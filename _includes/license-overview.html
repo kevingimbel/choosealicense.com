@@ -1,8 +1,0 @@
-{% assign id = "/licenses/" | append: include.license-id %}
-{% assign licenses = site.licenses | where:"id", id %}
-{% for license in licenses %}
-{
-  "name": "{{ license.title }}",
-  "deep": "{{ license.url }}"
-},
-{% endfor %}
